@@ -25,11 +25,10 @@ def split_text_into_sentences(text: str) -> Tuple[list[str], int]:
 
 def split_text_into_tokens(text: str) -> Tuple[list[str], int]:
     """
-    Split text into tokens and count token types
+    Split text into tokens and count token
     """
     tokens = nltk.tokenize.word_tokenize(text)
-    token_types = list(set(tokens))
-    return token_types, len(token_types)
+    return tokens, len(tokens)
 
 def find_tokens_lemmas(token_types: list[str]) -> Tuple[set, int]:
     """
@@ -64,6 +63,9 @@ if __name__ == "__main__":
     # Split for Tokens
     tokens = split_text_into_tokens(text)
     print ("Number of tokens: " + str(tokens[1]))
+    # Token types
+    token_types = list(set(tokens[0]))
+    print ("Number of token types: " + str(len(token_types)))
     # lemmatize Tokens
     lem_tokens = find_tokens_lemmas(tokens[0])
     print ("Number of lemma types: " + str(lem_tokens[1]))
