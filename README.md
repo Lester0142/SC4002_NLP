@@ -11,4 +11,11 @@ Write a program to do the following tasks:
 3. Split the text into tokens and count token types
 4. Find lemmas (or stems) of the tokens and count lemma types
 5. Do stemming on the tokens and count unique ‘stemmed’ tokens
-You may use any tools, including nltk, LingPipe, and Stanford NLP software.   
+You may use any tools, including nltk, LingPipe, and Stanford NLP software.
+
+## T4 Q3
+Run the Viterbi algorithm with the HMM in the figure below to compute the most likely
+weather sequences for each of the two following observation sequences. Note: You may
+consider using HMM packages for computation, e.g., https://pypi.org/project/hmmlearn/
+• Sequence: 312312312
+• Sequence: 311233112

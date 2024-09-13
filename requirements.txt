@@ -2,3 +2,5 @@ nltk
 beautifulsoup4
 lxml
 requests
+hmmlearn
+numpy == 1.26.4
